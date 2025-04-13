@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="nav_menu">
+            <h1>Elizabet</h1>
+            <label class="switch">
+                <input type="checkbox" id="temaToggle">
+                <span class="slider"></span>
+                <span>Cambiar Tema</span>
+            </label>
+            <div class="links">
+                <a href="#datos">Datos Personales</a>
+                <a href="#hobies">Hobies</a>
+                <a href="#experiencia">Experiencia</a>
+            </div>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <div class="card datos" id="datos">
+            <div class="imagen">
+                <img src="./perfil.jpg" alt="">
+            </div>
+            <div class="datos">
+                <h1>ELIZABET RODRIGUEZ</h1>
+                <p>19 Años</p>
+                <p>Bogotá</p>
+                <p>Kelizabetrodriguez@ucompensar.edu.co</p>
+                <p>3144378389</p>
+            </div>
+        </div>
+        <div class="card hobies" id="hobies">
+            <h1>About Me</h1>
+            <h2>Mis Hobies</h2>
+            <div class="minicard">
+                <ul class="hobies">
+                    <li>Me gusta pintar</li>
+                    <li>Me encanta tocar el violin </li>
+                    <li>Ver series</li>
+                    <li>Jugar</li>
+                    <li>Estudiar programacion</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card experiencia" id="experiencia">
+            <h1>Experiencia</h1>
+            <h2>He trabajado en:</h2>
+            <p>Diferentes proyectos como un gestor de facturación para una pequeña empresa con react y vite. </p>
+            <p>Cuento con experiencia creando sitios web utilizando Html, Css y JavaScript</p>
+            <p>Me encuentro aprendiendo React,Backend con Mysql, Python, entre otras tecnologias. </p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

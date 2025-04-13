@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fondo-body: rgb(236, 194, 194);
+    --color-texto: rgb(140, 65, 209);
+    --fondo-card: rgba(200, 200, 200, 0.3);
+    --color-links: black;
+    --sombra-card: rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.oscuro {
+    --fondo-body: #121212;
+    --color-texto: white;
+    --fondo-card: rgba(37, 34, 39, 0.267);
+    --color-links: white;
+    --sombra-card: rgba(63, 56, 56, 0.5);
+    background-image: url(./fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--fondo-body);
+    color: var(--color-texto);
+}
+
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav_menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 0px 15px var(--sombra-card);
+    padding: 5px 20px;
+    background-color: var(--fondo-body);
+    color: var(--color-texto);
+}
+
+.links {
+    grid-column: end;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+
+a {
+    color: var(--color-links);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    margin: 40px auto 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--color-texto);
+}
+
+
+.card {
+    justify-content: center;
+    width: 900px;
+    height: 500px;
+    background-color: var(--fondo-card);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--sombra-card);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px blueviolet;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+#datos {
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.minicard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background-color: var(--fondo-card);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--sombra-card);
+    overflow: hidden;
+}
+
+.minicard:hover {
+    box-shadow: 0px 0px 30px blueviolet;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#hobies {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hobies li {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--color-texto);
+}
+
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.514);
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 20px var(--sombra-card);
+}
+
+
+#experiencia {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-texto);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #683b81;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+span{
+    font-size: 12px;
+    text-align: center;
+}
